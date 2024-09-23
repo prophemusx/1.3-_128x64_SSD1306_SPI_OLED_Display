@@ -2,20 +2,21 @@
 
 # This repository contains the circuit schematic and source code for a custom display module based on the UG-2864KSWLG01 OLED display. The module communicates via SPI and is designed for easy integration into embedded systems.
 
-# Features
-Display Model: UG-2864KSWLG01
-Display Type: 128x64 OLED, monochrome
-Communication Protocol: SPI (Serial Peripheral Interface)
-Input Voltage: 3.3V/5V compatible (with logic level shifter for 1.8V systems)
-Low Power Consumption: OLED display consumes very little power, ideal for battery-powered projects.
-Driver Chip: SSD1306
-Display Color: White
-Supports Multiple Platforms: Works with Arduino, ESP32, STM32, and other microcontrollers.
-Compact Design: Ideal for small form factor projects like wearables, IoT devices, and handheld gadgets.
-Schematic
-You can find the complete circuit schematic in the schematics folder of this repository. The schematic is designed for simplicity and ease of use, with all necessary components included for optimal display operation.
+# 1. Features
+- **Display Model: UG-2864KSWLG01
+- **Display Type: 128x64 OLED, monochrome
+- **Communication Protocol: SPI (Serial Peripheral Interface)
+- **Input Voltage: 1.8V/5V compatible (with logic level shifter for 1.8V systems)
+- **Low Power Consumption: OLED display consumes very little power, ideal for battery-powered projects.
+- **Driver Chip: SSD1306
+- **Display Color: White
+- **Supports Multiple Platforms: Works with Arduino, ESP32, STM32, and other microcontrollers.
+- **Compact Design: Ideal for small form factor projects like wearables, IoT devices, and handheld gadgets.
 
-Note: If your system operates at 1.8V logic, please refer to the Logic Level Shifter section below.
+# 2. Schematic
+You can find the complete circuit schematic in the ZIP of this repository. The schematic is designed for simplicity and ease of use, with all necessary components included for optimal display operation.
+
+# Note: If your system operates at 1.8V logic, please refer to the Logic Level Shifter section below.
 
 Requirements
 A microcontroller (e.g., Arduino, ESP32, STM32)
@@ -27,8 +28,8 @@ Required libraries for SSD1306 display (e.g., Adafruit_SSD1306 for Arduino)
 Logic Level Shifter
 For systems using 1.8V logic, a Logic Level Shifter is required to safely interface with the UG-2864KSWLG01 module, which requires 3.3V or 5V for its SPI signals. The logic level shifter will convert the 1.8V signals from your microcontroller to the appropriate 3.3V or 5V levels needed by the display.
 
-Recommended Logic Shifters
-TXB0108: Bi-directional level shifter for converting signals between 1.8V and 3.3V/5V.
+# Recommended Logic Shifters
+TXB0106PWR: Bi-directional level shifter for converting signals between 1.8V and 3.3V/5V.
 74LVC245: Level shifter suitable for 1.8V to 3.3V conversion.
 Make sure to connect the SPI lines (SCL, SDA, CS, DC, RES) through the level shifter to ensure proper communication between the microcontroller and the display.
 
