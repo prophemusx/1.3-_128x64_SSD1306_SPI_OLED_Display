@@ -3,7 +3,7 @@
 # This repository contains the circuit schematic and source code for a custom display module based on the UG-2864KSWLG01 OLED display. The module communicates via SPI and is designed for easy integration into embedded systems.
 
 # 1. Features
-- **Display Model: UG-2864KSWLG01
+- Display Model: UG-2864KSWLG01
 - **Display Type: 128x64 OLED, monochrome
 - **Communication Protocol: SPI (Serial Peripheral Interface)
 - **Input Voltage: 1.8V/5V compatible (with logic level shifter for 1.8V systems)
